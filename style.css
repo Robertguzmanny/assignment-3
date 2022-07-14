@@ -1,0 +1,41 @@
+body {
+  background-image: url(images/cpmz99ncc1vlpuzuj3ha.jpg);
+  background-size: cover;
+}
+
+.child {
+  bottom: 10%;
+  right: 10px;
+  position: absolute;
+  background-color: rgba(0, 3, 0, 0.5);
+  text-align: center;
+  font-size: medium;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#cir {
+  position: relative;
+  width: 300px;
+}
+#hr {
+  position: absolute;
+  width: 100px;
+  top: 20%;
+  left: 10%;
+}
+
+#min {
+  position: absolute;
+  width: 50px;
+  top: 10%;
+  left: 10%;
+}
+
+#hr {
+  animation: rotate 43200s infinite linear;
+  animation-duration: 2s;
+}
