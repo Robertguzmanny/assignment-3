@@ -12,11 +12,17 @@ body {
   font-size: medium;
 }
 
-@keyframes rotate {
+@keyframes minutes {
   100% {
-    transform: rotate(360deg);
+    transform: rotate(630deg);
   }
 }
+@keyframes hours {
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
 #cir {
   position: relative;
   width: 300px;
@@ -24,18 +30,18 @@ body {
 #hr {
   position: absolute;
   width: 100px;
-  top: 20%;
-  left: 10%;
+  top: 20.5%;
+  left: 11.3%;
+  transform-origin: left;
+  animation: hours 10s infinite linear;
 }
 
 #min {
   position: absolute;
-  width: 50px;
-  top: 10%;
-  left: 10%;
-}
-
-#hr {
-  animation: rotate 43200s infinite linear;
-  animation-duration: 2s;
+  transform: rotate(270deg);
+  transform-origin: left;
+  width: 100px;
+  top: 20.5%;
+  left: 11.5%;
+  animation: minutes 10s infinite linear;
 }
